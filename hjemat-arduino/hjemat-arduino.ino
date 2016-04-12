@@ -3,6 +3,8 @@ byte id = 0x2;
 
 byte handshakeMessage[] = { B00000101, 0x0, 0x0, 0x10 };
 
+byte productID[] = { 0x0, 0x0, 0x10 };
+
 int ledPin = 13;
 
 void setup() {
@@ -42,6 +44,13 @@ void loop() {
           byte confirmationMessage[4] = { header, data[1], data[2], data[3]};
 
           Serial.write(confirmationMessage, 4);
+        }
+        else if (kom == B100)
+        {
+          byte header = createHeader(B111);
+          byte pingback[4] = { header, productID[0], productID[1], productID[2] };
+
+          Serial.write(pingback, 4);
         }
       }
     }
