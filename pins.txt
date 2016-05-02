@@ -1,0 +1,6 @@
+Pins for use with the Atmega328P
+
+Pin 0 for RX
+Pin 1 for TX
+Pin 2 for interupt
+Pin 3 for Changing state
