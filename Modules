@@ -4,9 +4,9 @@ Temperatur måler
 
 {TODO}
 	{PCB board}
-		
+
 	{Programming part}
 		Temperatur måler
 	{Schematic part}
 		Lys
-		Tjek om vindue er blevet åbnet(kan tjekkes med magneter)
+		Tjek om vindue er blevet åbnet(Reed relay)
