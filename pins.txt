@@ -10,5 +10,5 @@ Default pins:
 Temperature pins:
 	Analog Input 1 for temperature reading
 
-Light pins:
-	Pin 6 Turn on and off for light
+Reed pins:
+	Pin 12 To check if the door/windows is opened, high=closed, low=open
