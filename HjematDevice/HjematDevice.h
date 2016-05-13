@@ -9,8 +9,8 @@ class HjematDevice
     HjematDevice(long productID);
     void begin(int productID);
     void loop();
-    virtual short returnValue(byte dataID) = 0;
-    virtual short dataChange(byte dataID, short value) = 0;
+    virtual short returnValue(byte dataID) { };
+    virtual short dataChange(byte dataID, short value) { };
   private:
     // Variables
     byte _productID[3];
@@ -22,6 +22,7 @@ class HjematDevice
 
     bool _pairingAllowed = false;  
     bool _pairRequestSend = false;  
+    bool _isPaired = false;
   
     byte createHeader(byte command);
     byte createHeader(byte id, byte command);

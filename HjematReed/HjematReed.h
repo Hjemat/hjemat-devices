@@ -1,12 +1,14 @@
-#ifndef HJEMATTHEROMETER_H
-#define HJEMATTHEROMETER_H
+#ifndef HJEMATREED_H
+#define HJEMATREED_H
 
 #include "HjematDevice.h"
 #include "Arduino.h"
 
-class HjematTherometer : public HjematDevice {
+class HjematReed : public HjematDevice {
   public:
-    HjematTherometer() : HjematDevice(2) { }
+    HjematReed() : HjematDevice(3) { 
+      pinMode(12, INPUT);
+    }
     short returnValue(byte dataID);
     short dataChange(byte dataID, short value);
 };

@@ -1,7 +1,7 @@
 #include <HjematDevice.h>
-#include "HjematTherometer.h"
+#include "HjematReed.h"
 
-HjematTherometer* device = new HjematTherometer();
+HjematReed* device = new HjematReed();
 void setup() {
   Serial.begin(115200);
 }
